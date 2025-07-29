@@ -16,8 +16,9 @@ header h1 {
 header ul{
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
-    margin: 50px 0px 10px 0px;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px 0 10px 0;
 }
 
 header a{
@@ -50,28 +51,30 @@ main p {
 
 main h1, main h2{
     text-align: center;
+    margin-bottom: 10px;
 }
 
 div.card{
     padding: 30px 20px;
     position: relative;
-    display: block;
+    display: flex;
     height: 300px;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 
 
 div.card>img.unit{
-    position: absolute;
     z-index: 2;
-    left: 50%;
-    transform: translate(-50%, 40%);
+    padding-top: 100px;
 }
 
 div.card>img.flag{
     position: absolute;
-    z-index: 1;
-    transform: translate(-20px, -30px);
+    left: 0;
+    top: 0;
 }
 
 table{
